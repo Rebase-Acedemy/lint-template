@@ -52,11 +52,6 @@ jobs:
         uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: false
-          VALIDATE_JAVASCRIPT_ES: true
-          LINTER_RULES_PATH: /.github/workflows/
-          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
-          VALIDATE_HTML: true
-          VALIDATE_CSS: true
           # Change to 'master' if your main branch differs
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
